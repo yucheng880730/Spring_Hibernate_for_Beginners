@@ -37,8 +37,8 @@ public class FetchJoinDemo {
 
             Query<Instructor> query =
                     session.createQuery("Select i from Instructor i "
-                                    + "JOIN FETCH i.courses"
-                                    + "where i.ud=:theInstructorId",
+                                    + "JOIN FETCH i.courses "
+                                    + "where i.id=:theInstructorId",
                             Instructor.class);
 
             // set parameter on query
